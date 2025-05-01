@@ -1,6 +1,7 @@
-import { MigrationInterface, QueryRunner } from 'typeorm';
+// migration/TIMESTAMP2-CreateUsersTable.ts
+import { MigrationInterface, QueryRunner } from 'typeorm';  
 
-export class CreateUsersTable1742653296870 implements MigrationInterface {
+export class CreateUsersTable1710000000002 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.query(`
         CREATE TABLE users (

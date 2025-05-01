@@ -8,7 +8,10 @@ import { AppService } from './app.service';
 import { AuthGuard } from './auth/auth.guard';
 import { AuthModule } from './auth/auth.module';
 import { UserModule } from './user/user.module';
-import { PostModule } from './post/post.module';
+import { PembeliModule } from './pembeli/pembeli.module';
+import { PegawaiModule } from './pegawai/pegawai.module';
+import { LayananModule } from './layanan/layanan.module';
+
 
 @Module({
   imports: [
@@ -33,7 +36,9 @@ import { PostModule } from './post/post.module';
     }),
     AuthModule,
     UserModule,
-    PostModule
+    PembeliModule, // Modul Pembeli
+    PegawaiModule, // Modul Pegawai
+    LayananModule, // Modul Layanan
   ],
   controllers: [AppController],
   providers: [
