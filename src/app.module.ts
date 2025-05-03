@@ -11,8 +11,7 @@ import { UserModule } from './user/user.module';
 import { PembeliModule } from './pembeli/pembeli.module';
 import { PegawaiModule } from './pegawai/pegawai.module';
 import { LayananModule } from './layanan/layanan.module';
-import { PostModule } from './post/post.module';
-import { CommentModule } from './comment/comment.module';
+
 
 @Module({
   imports: [
@@ -39,9 +38,7 @@ import { CommentModule } from './comment/comment.module';
     UserModule,
     PembeliModule, // Modul Pembeli
     PegawaiModule, // Modul Pegawai
-    LayananModule, // Modul Layanan
-    PostModule,
-    CommentModule,
+    LayananModule
   ],
   controllers: [AppController],
   providers: [
